@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Hi, I'm Jason</h1>
+    <p class="tagline">
+      I turn ideas into working software, usually with the help of AI.
+    </p>
+    <p class="subtitle">
+      Currently building personal tools, learning by shipping real projects, and
+      figuring things out in public.
+    </p>
+    <div class="hero-links">
+      <a href="/blog" class="btn">Read the blog</a>
+      <a href="/resume">Resume</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About me</h2>
+    <p>
+      I'm Jason, a developer based in <!-- TODO: add your location -->. I got
+      into building software because I like making things that actually work —
+      tools I use myself, not just projects that sit in a repo.
+    </p>
+    <p>
+      Right now I'm focused on web development with TypeScript and React, and
+      I'm especially interested in how AI changes the way we build software. I
+      use AI as a daily collaborator, not just a search engine — it lets me ship
+      things I wouldn't have attempted a year ago.
+    </p>
+    <p>
+      When I'm not coding, I'm probably cooking (I self-host a recipe manager),
+      tinkering with my home server, or going down some rabbit hole I'll
+      eventually turn into a project.
+    </p>
+  </section>
+
+  <!-- Connect -->
+  <section class="connect" id="connect">
+    <h2>Find me online</h2>
+    <ul class="social-links">
+      <li>
+        <a href="https://github.com/sixthshift" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span>— where the code lives</span>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/jason-isaac-huang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span>— let's connect</span>
+      </li>
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  section {
+    margin-bottom: 4rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--color-text);
+    color: var(--color-bg);
+    padding: 0.6rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: opacity 0.15s ease;
+  }
+
+  .btn:hover {
+    opacity: 0.85;
+    color: var(--color-bg);
+  }
+
+  /* About */
+  .about h2 {
+    margin-bottom: 1rem;
+  }
+
+  /* Connect */
+  .connect h2 {
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .social-links span {
+    color: var(--color-text-muted);
+    font-size: 0.9375rem;
+  }
+
+  @media (min-width: 640px) {
+    .hero h1 {
+      font-size: 3rem;
+    }
+  }
+</style>
